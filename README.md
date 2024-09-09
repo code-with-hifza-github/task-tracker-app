@@ -1,3 +1,35 @@
+# TaskInput Component
+The TaskInput component is a simple React component that allows users to manage a to-do list. It provides functionalities to add new tasks, remove individual tasks, and clear the entire list. This component demonstrates basic usage of React hooks such as useState.
+# Features
+Add Activity: Users can type an activity into the input field and click the "Add" button to add it to the to-do list.
+Remove Activity: Each task in the list has a "Remove" button that allows users to delete that specific task from the list.
+Remove All: There is a "Remove All" button that clears all tasks from the to-do list.
+List Rendering: Displays the current list of tasks with the option to remove each task individually.
+ # Explanation
+State Management:
+
+activity: Holds the current value of the input field.
+listData: Stores the array of tasks in the to-do list.
+Functions:
+
+addActivity(): Adds the current activity to the list and resets the input field.
+removeActivity(i): Removes a task from the list based on its index.
+removeAll(): Clears all tasks from the list.
+Rendering:
+
+An input field and an "Add" button allow users to add tasks.
+A list of tasks is displayed with each task having a "Remove" button.
+A "Remove All" button appears if there is at least one task in the list.
+# Styling
+The component assumes certain CSS classes (container, header, List-heading, listData, btn-position) are defined in your CSS files to style the layout. You can customize these styles as needed.
+
+Notes
+Ensure to check for unique keys when rendering lists in React. Using array indexes as keys (like key={i}) is acceptable for static lists but may not be ideal for dynamic or editable lists.
+The current implementation uses console.log(updatedList) for debugging purposes; you can remove or replace it as needed.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
